@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <style>
+      #gameCanvas {
+        border: 5px solid green;
+        background-image: url("../Images/bg.png");
+        background-size:cover;
+        
+      }
+      #scoreBoard {
+        position: sticky;
+        top: 50;
+        right: 0;
+        left: 0;
+        width: 130;
+        border-radius: 10px;
+        background-color: rgba(9, 172, 77, 0.7);
+      }
+      #minion,
+      #car,
+      #grass {
+        display: none;
+      }
+      .end {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid orangered;
+  width: 80%;
+}
+.close {
+  color: black;
+  background-color: red;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+    </style>
+    <h1>
+      Minion Frenzy
+    </h1>
+  </head>
+
+  <div>
+    <div id="scoreBoard">
+      <h2><span>Score: </span><span id="score"></span></h2>
+      <h2><span>Level: </span><span id="level"></span></h2>
+    </div>
+    <canvas id="gameCanvas" width="1280" height="1160"> </canvas>
+    <img class="minionClass" id="minion" src="../Images/hero1.png" alt="" />
+
+    <img class="carClass" id="car" src="../Images/car.png" alt="" />
+
+   
+    <script src="../JavaScript/jquery.js"></script>
+    <script src="../JavaScript/game.js"></script>
+  </div>
+
+  <div id="myEnd" class="end">
+    <!-- Modal content -->
+    
+    <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="helpinsurtuction">Congratulations!! You finished this level</br>
+    </p>
+    <p id="helpinsurtuction2">Going to next level</br>
+    </p>
+    </div></div>
+
+    <div id="myEnd2" class="end">
+      <!-- Modal content -->
+      
+      <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="helpinsurtuction">Game Over! :(</br>
+      </p>
+      <p id="helpinsurtuction2">Can't wait to see you again</br>
+      </p>
+      </div></div>
+</html>

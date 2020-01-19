@@ -1,0 +1,250 @@
+header {
+  text-align: center;
+  font-family: "Impact";
+  font-style: normal;
+  color: orange;
+  font-size: 90px;
+  position: fixed;
+  text-decoration: underline dotted white;
+  text-shadow: 0 5px black;
+  left: 150px;
+  top: 0px;
+}
+#choosehero {
+  position: relative;
+  left: 290;
+  width: 800;
+  top: -180;
+}
+
+body {
+  position: fixed;
+  background-image: url("../Images/pq.png");
+
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  background-attachment: fixed;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+
+.modal-content {
+  background-color:white;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid orangered;
+  width: 80%;
+}
+.modal-content2 {
+  background-color:rgb(72, 124, 156);
+  margin: auto;
+  padding: 20px;
+  border: 5px solid rgb(60, 8, 201);
+  width: 80%;
+}
+.close {
+  color: black;
+  background-color:white;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#helpinsurtuction {
+  font-size: 40px;
+  font-family: fantasy;
+  color: orangered;
+}
+
+#aboutus {
+  font-size: 40px;
+  text-align: center;
+  font-family: fantasy;
+  color: rgb(15, 38, 136);
+}
+#helpinsurtuction2 {
+  font-size: 28px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.charbody {
+  position: fixed;
+  background-image: url("../Images/bg2.jpg");
+
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  background-attachment: fixed;
+}
+.levelpage {
+  background-image: url("../Images/bg3.jpg");
+  background-attachment: fixed;
+}
+
+.button {
+  text-align: center;
+  font-family: "Impact";
+  border: 3px solid black;
+  background-color: orange;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  left: 485px;
+  top: 90px;
+  font-size: 30px;
+  display: inline-block;
+  border-radius: 8px;
+
+  min-width: 170px;
+  min-height: 60px;
+}
+.startbtn {
+  margin-top: 50;
+}
+.setbtn {
+  margin-top: 200;
+}
+.helpbtn {
+  margin-top: 120;
+}
+
+.level1btn {
+  background-color: yellow;
+  position: relative;
+  left: 460px;
+  top: 300px;
+  min-width: 390px;
+}
+
+.level2btn {
+  background-color: orange;
+  margin-top: 85;
+  position: absolute;
+  left: 460px;
+  top: 280px;
+  min-width: 390px;
+}
+.level3btn {
+  background-color: red;
+  position: absolute;
+  left: 460px;
+  top: 430px;
+  min-width: 390px;
+}
+
+.exitbtn {
+  position: relative;
+  left: 25px;
+  top: 550px;
+  width: 120px;
+  height: 55px;
+  border-radius: 8px;
+  color: white;
+  font-size: 25px;
+  background-color: red;
+  position: fixed;
+}
+#levelspage {
+  font-size: 100px;
+  left: 400px;
+  top: 30px;
+}
+.backbtn {
+  position: relative;
+  left: -290px;
+  top: 550px;
+  width: 120px;
+  height: 55px;
+  border-radius: 8px;
+  color: white;
+  font-size: 25px;
+  background-color: black;
+}
+
+.backbtn2 {
+  position: relative;
+  left: -1050px;
+  top: 260px;
+  width: 120px;
+  height: 55px;
+  border-radius: 8px;
+  color: white;
+  font-size: 25px;
+  background-color: black;
+}
+.nextbtn {
+  position: relative;
+  left: 580px;
+  top: 550px;
+  width: 120px;
+  height: 55px;
+  border-radius: 8px;
+  color: white;
+  font-size: 25px;
+  background-color: blue;
+}
+
+.nextbtn2 {
+  position: relative;
+  left: 1s00px;
+  top: 550px;
+  width: 120px;
+  height: 55px;
+  border-radius: 8px;
+  color: white;
+  font-size: 25px;
+  background-color: blue;
+  position: fixed;
+}
+
+#hero1 {
+  width: 10 px;
+  height: 300px;
+  left: 825px;
+  bottom: -340px;
+  position: absolute;
+}
+#hero2 {
+  width: 50 px;
+  height: 320px;
+  position: relative;
+  left: -520px;
+  bottom: -210px;
+}
+#helpPage {
+  background-color: white;
+  background-image: none;
+}
+
+h1 {
+  background-image: none;
+}
+#scoreboard {
+  position: "sticky";
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: "red";
+  /* bottom: 5; */
+}
